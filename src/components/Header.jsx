@@ -1,48 +1,21 @@
 import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <NavLink className="navbar-brand" to="/">
-          John Doe
-        </NavLink>
+    <header className="header">
+      <div className="header-container">
+        <span className="logo">JOHN DOE</span>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                Accueil
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/services">
-                Services
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">
-                Portfolio
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <nav>
+          <NavLink to="/" end>HOME</NavLink>
+          <NavLink to="/services">SERVICES</NavLink>
+          <NavLink to="/portfolio">PORTFOLIO</NavLink>
+          <NavLink to="/contact">CONTACT</NavLink>
+          <NavLink to="/mentions-legales">MENTIONS LÉGALES</NavLink>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
 
