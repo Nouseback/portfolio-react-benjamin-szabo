@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Legal from "./pages/Legal";
+import Legal from "./pages/MentionsLegales";
 
 function App() {
   return (

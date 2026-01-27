@@ -1,18 +1,28 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "../styles/Header.css";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header-container">
-        <span className="logo">JOHN DOE</span>
+        <div className="logo">JOHN DOE</div>
 
-        <nav>
-          <NavLink to="/" end>HOME</NavLink>
-          <NavLink to="/services">SERVICES</NavLink>
-          <NavLink to="/portfolio">PORTFOLIO</NavLink>
-          <NavLink to="/contact">CONTACT</NavLink>
-          <NavLink to="/mentions-legales">MENTIONS LÉGALES</NavLink>
+        <button
+          className="burger"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
+
+        <nav className={`header-nav ${isMenuOpen ? "open" : ""}`}>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/mentions-legales">Mentions légales</NavLink>
         </nav>
       </div>
     </header>

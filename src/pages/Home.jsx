@@ -40,6 +40,8 @@ function Home() {
           <div className="about">
             <h3><strong>A propos</strong></h3>
             <span className="blue-line"></span>
+            
+            <img src={aboutImg} alt="John Doe" />
 
             <p>
               Passionné par l'informatique et les nouvelles technologies,
@@ -50,8 +52,7 @@ function Home() {
               Aujourd’hui, je maîtrise les différentes étapes techniques
               de la création d’un site ou d’une application web.
             </p>
-
-            <img src={aboutImg} alt="John Doe" />
+            
           </div>
 
           {/* COMPETENCES */}
