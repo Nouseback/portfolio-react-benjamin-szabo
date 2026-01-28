@@ -12,6 +12,7 @@ function Header() {
 
         <button
           className="burger"
+          aria-label="Menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           ☰

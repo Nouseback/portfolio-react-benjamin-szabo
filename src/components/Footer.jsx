@@ -7,22 +7,26 @@ function Footer() {
 
         <div>
           <h4>John Doe</h4>
-          <p>40 rue Laure Diebold<br />69009 Lyon, France</p>
+          <p>
+            40 rue Laure Diebold<br />
+            69009 Lyon, France
+          </p>
           <p>10 20 30 40 50</p>
           <p>john.doe@gmail.com</p>
-        
-        <div className="social-icons">
-          <a href="#" aria-label="GitHub">
-          <i className="fab fa-github"></i>
-          </a>
-          <a href="#" aria-label="Twitter">
-          <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-          <i className="fab fa-linkedin"></i>
-          </a>
+
+          <div className="social-icons">
+            <a href="#" aria-label="GitHub">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-      </div>
+
         <div>
           <h4>Liens utiles</h4>
           <ul>

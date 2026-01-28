@@ -5,16 +5,11 @@ import aboutImg from "../assets/images/john-doe-about.jpg";
 import GithubModal from "../components/GithubModal";
 
 function Home() {
-
-  /* ===============================
-     STATE MODALE GITHUB
-  =============================== */
   const [showModal, setShowModal] = useState(false);
 
   return (
     <main>
-
-      {/* ===== HERO ===== */}
+      {/* HERO */}
       <section
         className="hero"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -22,42 +17,35 @@ function Home() {
         <div className="hero-content">
           <h1>Bonjour, je suis John Doe</h1>
           <h2>Développeur web full stack</h2>
-
           <button
             className="btn-primary"
             onClick={() => setShowModal(true)}
+            aria-label="Ouvrir le profil GitHub"
           >
             En savoir plus
           </button>
         </div>
       </section>
 
-      {/* ===== A PROPOS + COMPETENCES ===== */}
+      {/* A PROPOS + COMPETENCES */}
       <section className="about-skills">
         <div className="about-skills-card">
-
-          {/* A PROPOS */}
           <div className="about">
-            <h3><strong>A propos</strong></h3>
+            <h3>A propos</h3>
             <span className="blue-line"></span>
-            
-            <img src={aboutImg} alt="John Doe" />
-
+            <img src={aboutImg} alt="Portrait de John Doe" />
             <p>
               Passionné par l'informatique et les nouvelles technologies,
               j’ai suivi une formation d’intégrateur développeur web.
             </p>
-
             <p>
               Aujourd’hui, je maîtrise les différentes étapes techniques
               de la création d’un site ou d’une application web.
             </p>
-            
           </div>
 
-          {/* COMPETENCES */}
           <div className="skills">
-            <h3><strong>Mes compétences</strong></h3>
+            <h3>Mes compétences</h3>
             <span className="blue-line"></span>
 
             <div className="skill">
@@ -71,7 +59,7 @@ function Home() {
             </div>
 
             <div className="skill">
-              <span>JAVASCRIPT 70%</span>
+              <span>JavaScript 70%</span>
               <div className="bar js"></div>
             </div>
 
@@ -81,20 +69,14 @@ function Home() {
             </div>
 
             <div className="skill">
-              <span>REACT 50%</span>
+              <span>React 50%</span>
               <div className="bar react"></div>
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* ===== MODALE GITHUB ===== */}
-      <GithubModal
-        show={showModal}
-        onClose={() => setShowModal(false)}
-      />
-
+      <GithubModal show={showModal} onClose={() => setShowModal(false)} />
     </main>
   );
 }

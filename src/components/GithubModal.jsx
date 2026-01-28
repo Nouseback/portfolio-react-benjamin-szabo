@@ -7,15 +7,14 @@ function GithubModal({ show, onClose }) {
     <div className="github-modal-overlay">
       <div className="github-modal">
 
-        {/* HEADER */}
         <div className="github-modal-header">
           <h3>Mon profil GitHub</h3>
-          <button className="close-btn" onClick={onClose}>×</button>
+          <button className="close-btn" onClick={onClose} aria-label="Fermer">
+            ×
+          </button>
         </div>
 
-        {/* BODY */}
         <div className="github-modal-body">
-          {/* AVATAR */}
           <div className="github-avatar">
             <img
               src="https://avatars.githubusercontent.com/u/583231?v=4"
@@ -23,7 +22,6 @@ function GithubModal({ show, onClose }) {
             />
           </div>
 
-          {/* INFOS */}
           <div className="github-infos">
             <p className="github-name">John Doe</p>
 
@@ -40,7 +38,6 @@ function GithubModal({ show, onClose }) {
           </div>
         </div>
 
-        {/* FOOTER */}
         <div className="github-modal-footer">
           <button className="close-footer-btn" onClick={onClose}>
             Fermer
