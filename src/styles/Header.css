@@ -40,7 +40,11 @@
   transition: width 0.3s;
 }
 
-.header-nav a:hover::after {
+.header-nav a:hover::after{
+  width: 100%;
+}
+
+.header-nav a.active::after {
   width: 100%;
 }
 

@@ -19,7 +19,7 @@ function Header() {
         </button>
 
         <nav className={`header-nav ${isMenuOpen ? "open" : ""}`}>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" end>Home</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/portfolio">Portfolio</NavLink>
           <NavLink to="/contact">Contact</NavLink>

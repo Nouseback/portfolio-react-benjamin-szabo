@@ -30,11 +30,16 @@ function Footer() {
         <div>
           <h4>Liens utiles</h4>
           <ul>
-            <li>Accueil</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Mentions légales</li>
+            <li>
+              <a href="acceuil">Acceuil</a></li>
+            <li>
+              <a href="Services">Services</a></li>
+            <li>
+              <a href="Portfolio">Portfolio</a></li>
+            <li>
+              <a href="Contact">Contact</a></li>
+            <li>
+              <a href="Mentions légales">Mentions Légales</a></li>
           </ul>
         </div>
 

@@ -27,13 +27,14 @@
   margin-bottom: 15px;
 }
 
-.footer ul {
-  list-style: none;
-  padding: 0;
+.footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer li {
-  margin-bottom: 8px;
+.footer ul li a:hover {
+  color: #ffffff;
 }
 
 /* TABLETTE */

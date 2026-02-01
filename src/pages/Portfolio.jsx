@@ -20,7 +20,10 @@ function Portfolio() {
         <span className="blue-line"></span>
       </section>
 
-      <section className="portfolio-section">
+      <h2 id="portfolio-projects" className="sr-only">
+        Projets web réalisés
+      </h2>
+      <section className="portfolio-section" aria-labelledby="portfolio-projects">
         <div className="portfolio-container">
           {[ 
             { img: freshFood, title: "Fresh Food", tech: "PHP et MySQL" },
@@ -31,10 +34,14 @@ function Portfolio() {
             { img: maquette, title: "Maquette site web", tech: "Figma" },
           ].map((item, index) => (
             <article className="portfolio-card" key={index}>
-              <img src={item.img} alt={item.title} />
+              <img
+                src={item.img}
+                alt={`Projet ${item.title} – ${item.tech}`}/>
               <div className="card-body">
                 <h3>{item.title}</h3>
-                <button className="btn-primary">Voir le site</button>
+                <a href="#" className="btn-primary" aria-label={`Voir le projet ${item.title}`}>
+                  Voir le site
+                </a>
               </div>
               <div className="card-footer">Réalisé avec {item.tech}</div>
             </article>

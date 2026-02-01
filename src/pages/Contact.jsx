@@ -37,8 +37,12 @@ function Contact() {
             <p><strong>John Doe</strong></p>
             <p>40 Rue Laure Diebold</p>
             <p>69009 Lyon, France</p>
-            <p>10 20 30 40 50</p>
-            <p>john.doe@gmail.com</p>
+            <p>
+              <a href="tel:1020304050">10 20 30 40 50</a>
+            </p>
+            <p>
+              <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
+            </p>
 
             <iframe
               title="Localisation"
