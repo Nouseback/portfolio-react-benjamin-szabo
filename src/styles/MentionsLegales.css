@@ -1,63 +1,73 @@
 /* PAGE */
 .legal-page {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 60px 20px;
 }
 
-/* HEADER */
-.legal-header {
+.legal-page h1 {
   text-align: center;
-  margin-bottom: 40px;
-}
-
-.legal-header h1 {
   font-size: 32px;
+  margin-bottom: 15px;
 }
 
-.blue-line {
-  display: block;
-  width: 500px;
+.title-underline {
+  width: 300px;
   height: 4px;
-  background: #0d6efd;
-  margin: 15px auto 0;
+  background-color: #0d6efd;
+  margin: 0 auto 50px;
 }
 
 /* CONTAINER */
 .legal-container {
-  max-width: 900px;
-  margin: auto;
-  background: #fff;
+  background-color: #ffffff;
   border-radius: 6px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
-/* ITEM */
-.legal-item {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-/* TOGGLE */
-.legal-toggle {
+/* HEADER */
+.legal-header {
   width: 100%;
-  padding: 15px 20px;
-  background: #f8f9fa;
+  background-color: #ffffff;
   border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 20px;
   font-size: 16px;
-  font-weight: 600;
+  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 
-.legal-toggle.active {
-  background: #dbeafe;
+.legal-header:hover {
+  background-color: #f8f9fa;
 }
 
-/* CONTENT */
+.legal-header.active {
+  background-color: #dbeafe;
+  font-weight: 600;
+}
+
+/* FLÈCHE */
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.legal-header.active .arrow {
+  transform: rotate(-135deg);
+}
+
+/* CONTENU */
 .legal-content {
-  padding: 20px;
-  animation: fade 0.3s ease;
+  padding: 25px 20px;
+  background-color: #ffffff;
 }
 
 .legal-content h2 {
@@ -66,33 +76,25 @@
 
 .legal-content p {
   margin-bottom: 10px;
-  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* LINKS */
 .legal-content a {
   color: #0d6efd;
+  text-decoration: none;
+}
+
+.legal-content a:hover {
   text-decoration: underline;
 }
 
-/* ANIMATION */
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .legal-page h1 {
+    font-size: 26px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* TABLETTE */
-@media (max-width: 992px) {}
-
-/* MOBILE */
-@media (max-width: 576px) {
-  .legal-container {
-    padding: 0 15px;
+  .title-underline {
+    width: 200px;
   }
 }

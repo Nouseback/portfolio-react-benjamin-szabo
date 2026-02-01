@@ -40,15 +40,18 @@
 /* TABLETTE */
 @media (max-width: 992px) {
   .footer-container {
-    flex-wrap: wrap;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* MOBILE */
 @media (max-width: 576px) {
   .footer-container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 15px;
   }
 }

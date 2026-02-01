@@ -10,42 +10,85 @@ import maquette from "../assets/images/portfolio/screens.jpg";
 function Portfolio() {
   return (
     <main>
-      <section
-        className="portfolio-banner"aria-hidden="true"
-      ></section>
 
+      {/* HERO */}
+      <header
+        className="portfolio-banner"
+        style={{ backgroundImage: `url(${banner})` }}
+        aria-hidden="true"
+      ></header>
+
+      {/* TITRE */}
       <section className="portfolio-title">
         <h1>Portfolio</h1>
         <p>Voici quelques-unes de mes réalisations</p>
         <span className="blue-line"></span>
       </section>
 
-      <h2 id="portfolio-projects" className="sr-only">
-        Projets web réalisés
-      </h2>
-      <section className="portfolio-section" aria-labelledby="portfolio-projects">
+      {/* PROJETS */}
+      <section className="portfolio-section">
         <div className="portfolio-container">
-          {[ 
-            { img: freshFood, title: "Fresh Food", tech: "PHP et MySQL" },
-            { img: restaurant, title: "Restaurant Akira", tech: "WordPress" },
-            { img: bienEtre, title: "Espace bien-être", tech: "Laravel" },
-            { img: seo, title: "SEO", tech: "Outils SEO" },
-            { img: api, title: "Création d’une API", tech: "Symfony" },
-            { img: maquette, title: "Maquette site web", tech: "Figma" },
-          ].map((item, index) => (
-            <article className="portfolio-card" key={index}>
-              <img
-                src={item.img}
-                alt={`Projet ${item.title} – ${item.tech}`}/>
-              <div className="card-body">
-                <h3>{item.title}</h3>
-                <a href="#" className="btn-primary" aria-label={`Voir le projet ${item.title}`}>
-                  Voir le site
-                </a>
-              </div>
-              <div className="card-footer">Réalisé avec {item.tech}</div>
-            </article>
-          ))}
+
+          <article className="portfolio-card">
+            <img src={freshFood} alt="Fresh Food – PHP et MySQL" />
+            <div className="card-body">
+              <h3>Fresh Food</h3>
+              <p>Site de vente de produits frais en ligne</p>
+              <a href="#" className="btn-primary">Voir le site</a>
+            </div>
+            <div className="card-footer">Réalisé avec PHP et MySQL</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={restaurant} alt="Restaurant Akira – WordPress" />
+            <div className="card-body">
+              <h3>Restaurant Akira</h3>
+              <p>Site vitrine pour restaurant japonais</p>
+              <a href="#" className="btn-primary">Voir le site</a>
+            </div>
+            <div className="card-footer">Réalisé avec WordPress</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={bienEtre} alt="Espace bien-être – Laravel" />
+            <div className="card-body">
+              <h3>Espace bien-être</h3>
+              <p>Site de présentation d’un centre bien-être</p>
+              <a href="#" className="btn-primary">Voir le site</a>
+            </div>
+            <div className="card-footer">Réalisé avec Laravel</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={seo} alt="SEO" />
+            <div className="card-body">
+              <h3>SEO</h3>
+              <p>Optimisation du référencement naturel</p>
+              <a href="#" className="btn-primary">Voir le site</a>
+            </div>
+            <div className="card-footer">Outils SEO</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={api} alt="Création API – Symfony" />
+            <div className="card-body">
+              <h3>Création d’une API</h3>
+              <p>API REST publique</p>
+              <a href="#" className="btn-primary">Voir le site</a>
+            </div>
+            <div className="card-footer">PHP – Symfony</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={maquette} alt="Maquette site web – Figma" />
+            <div className="card-body">
+              <h3>Maquette de site web</h3>
+              <p>Prototype graphique</p>
+              <a href="#" className="btn-primary">Voir le site</a>
+            </div>
+            <div className="card-footer">Figma</div>
+          </article>
+
         </div>
       </section>
     </main>
