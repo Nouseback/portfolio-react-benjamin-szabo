@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio-react-john-doe/static/css/main.2382f134.css",
+    "main.js": "/portfolio-react-john-doe/static/js/main.7a891e70.js",
+    "static/media/fa-solid-900.woff2": "/portfolio-react-john-doe/static/media/fa-solid-900.8ae0d37556ff1e685de2.woff2",
+    "static/media/hero-bg.jpg": "/portfolio-react-john-doe/static/media/hero-bg.b8e12f2e72b502a5488a.jpg",
+    "static/media/fa-brands-400.woff2": "/portfolio-react-john-doe/static/media/fa-brands-400.1c5c7716b05754cb4eab.woff2",
+    "static/media/fresh-food.jpg": "/portfolio-react-john-doe/static/media/fresh-food.f9cd00cae747ce16b0ee.jpg",
+    "static/media/seo.jpg": "/portfolio-react-john-doe/static/media/seo.6bcd3f1167b406ea1f61.jpg",
+    "static/media/screens.jpg": "/portfolio-react-john-doe/static/media/screens.0a86655b7e4e2f075a26.jpg",
+    "static/media/restaurant-japonais.jpg": "/portfolio-react-john-doe/static/media/restaurant-japonais.12050b46a3cca523c6c9.jpg",
+    "static/media/coder.jpg": "/portfolio-react-john-doe/static/media/coder.e936b864e20943704d2a.jpg",
+    "static/media/banner.jpg": "/portfolio-react-john-doe/static/media/banner.55f7c897ddbeb816abb9.jpg",
+    "static/media/john-doe-about.jpg": "/portfolio-react-john-doe/static/media/john-doe-about.07bb2b3f66fb2530c208.jpg",
+    "static/media/espace-bien-etre.jpg": "/portfolio-react-john-doe/static/media/espace-bien-etre.f6f025ed9a6d4d00b431.jpg",
+    "static/media/fa-regular-400.woff2": "/portfolio-react-john-doe/static/media/fa-regular-400.6f05ca9ab7b5345dbc07.woff2",
+    "static/media/fa-v4compatibility.woff2": "/portfolio-react-john-doe/static/media/fa-v4compatibility.e4340c52a50e727c6afa.woff2",
+    "index.html": "/portfolio-react-john-doe/index.html",
+    "main.2382f134.css.map": "/portfolio-react-john-doe/static/css/main.2382f134.css.map",
+    "main.7a891e70.js.map": "/portfolio-react-john-doe/static/js/main.7a891e70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2382f134.css",
+    "static/js/main.7a891e70.js"
+  ]
+}
