@@ -20,7 +20,7 @@ function Portfolio() {
 
       {/* TITRE */}
       <section className="portfolio-title">
-        <h1>Portfolio</h1>
+        <h1><strong>Portfolio</strong></h1>
         <p>Voici quelques-unes de mes réalisations</p>
         <span className="blue-line"></span>
       </section>
@@ -32,7 +32,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={freshFood} alt="Fresh Food – PHP et MySQL" />
             <div className="card-body">
-              <h3>Fresh Food</h3>
+              <h3><strong>Fresh Food</strong></h3>
               <p>Site de vente de produits frais en ligne</p>
               <a href="#" className="btn-primary">Voir le site</a>
             </div>
@@ -42,7 +42,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={restaurant} alt="Restaurant Akira – WordPress" />
             <div className="card-body">
-              <h3>Restaurant Akira</h3>
+              <h3><strong>Restaurant Akira</strong></h3>
               <p>Site vitrine pour restaurant japonais</p>
               <a href="#" className="btn-primary">Voir le site</a>
             </div>
@@ -52,7 +52,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={bienEtre} alt="Espace bien-être – Laravel" />
             <div className="card-body">
-              <h3>Espace bien-être</h3>
+              <h3><strong>Espace bien-être</strong></h3>
               <p>Site de présentation d’un centre bien-être</p>
               <a href="#" className="btn-primary">Voir le site</a>
             </div>
@@ -62,7 +62,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={seo} alt="SEO" />
             <div className="card-body">
-              <h3>SEO</h3>
+              <h3><strong>SEO</strong></h3>
               <p>Optimisation du référencement naturel</p>
               <a href="#" className="btn-primary">Voir le site</a>
             </div>
@@ -72,7 +72,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={api} alt="Création API – Symfony" />
             <div className="card-body">
-              <h3>Création d’une API</h3>
+              <h3><strong>Création d’une API</strong></h3>
               <p>API REST publique</p>
               <a href="#" className="btn-primary">Voir le site</a>
             </div>
@@ -82,7 +82,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={maquette} alt="Maquette site web – Figma" />
             <div className="card-body">
-              <h3>Maquette de site web</h3>
+              <h3><strong>Maquette de site web</strong></h3>
               <p>Prototype graphique</p>
               <a href="#" className="btn-primary">Voir le site</a>
             </div>

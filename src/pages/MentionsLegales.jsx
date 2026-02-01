@@ -66,7 +66,7 @@ function MentionsLegales() {
 
         {openSection === "credits" && (
           <div className="legal-content">
-            <h2>Crédits</h2>
+            <h2><strong>Crédits</strong></h2>
             <p>
               Ce site a été réalisé par John Doe, étudiant au{" "}
               <a

@@ -13,8 +13,8 @@ function Home() {
       <section
         className="hero">
         <div className="hero-content">
-          <h1>Bonjour, je suis John Doe</h1>
-          <h2>Développeur web full stack</h2>
+          <h1><strong>Bonjour, je suis John Doe</strong></h1>
+          <h2><strong>Développeur web full stack</strong></h2>
           <button
             className="btn-primary"
             onClick={() => setShowModal(true)}
@@ -29,7 +29,7 @@ function Home() {
       <section className="about-skills">
         <div className="about-skills-card">
           <div className="about">
-            <h3>A propos</h3>
+            <h3><strong>A propos</strong></h3>
             <span className="blue-line"></span>
             <img src={aboutImg} alt="Portrait de John Doe" />
             <p>
@@ -43,7 +43,7 @@ function Home() {
           </div>
 
           <div className="skills">
-            <h3>Mes compétences</h3>
+            <h3><strong>Mes compétences</strong></h3>
             <span className="blue-line"></span>
 
             <div className="skill">
